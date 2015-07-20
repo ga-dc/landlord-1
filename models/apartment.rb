@@ -13,6 +13,5 @@ class Apartment
     if @renters.length < @num_beds
       @renters.push(tenant)
     end
-    # @renters person if @renters.length < @num_beds
   end
 end
