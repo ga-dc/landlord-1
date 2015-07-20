@@ -10,8 +10,8 @@ class Apartment
     @renters = renters
   end
 
-  def add_tenant(person)
-    @renters << person if @renters.length < @num_beds
+  def add_tenant(tenant)
+    @renters << tenant if @renters.length < @num_beds
   end
 
   def address
