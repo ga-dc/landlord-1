@@ -1,5 +1,5 @@
-require_relative "../models/apartment"
-require_relative "../models/tenant"
+require_relative "../models/apartment.rb"
+require_relative "../models/tenant.rb"
 
 describe Apartment do
   before(:all) do

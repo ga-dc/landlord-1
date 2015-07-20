@@ -1,4 +1,4 @@
-require_relative "../models/tenant"
+require_relative "../models/tenant.rb"
 
 describe Tenant do
   before(:all) do
