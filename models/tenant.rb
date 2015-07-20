@@ -7,16 +7,13 @@ class Tenant
     @gender = ten_gender
   end
 
-  def renter
-    return "Tenant name is #{@name}"
+  def name
+    return @name
   end
-
-  def renter2
-    return "Tenant name is #{@age}"
+  def age
+    return @age
   end
-
-  def renter3
-    return "Tenant name is #{@gender}"
+  def gender
+    return @gender
   end
-  
 end
