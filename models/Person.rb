@@ -1,3 +1,22 @@
-class Person
+class Tenant
+  attr_accessor :name, :age ,:gender
 
-end 
+  def initialize(tenant_name,tenant_age,tenant_gender)
+    @name = tenant_name
+    @age = tenant_age
+    @gender = tenant_gender
+  end
+
+  def name
+    
+  end
+
+  def age
+
+  end
+
+  def gender
+
+  end
+
+end
