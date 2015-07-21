@@ -1,5 +1,7 @@
+require 'pry'
+
 class Apartment
-  attr_reader :address, :monthly_rent, :sqft, :num_beds, :num_baths, :renters
+  attr_accessor :address, :monthly_rent, :sqft, :num_beds, :num_baths, :renters
 
   def initialize(address, monthly_rent, sqft, num_beds, num_baths, renters)
     @address = address
@@ -7,15 +9,19 @@ class Apartment
     @sqft = sqft
     @num_beds = num_beds
     @num_baths = num_baths
-    @num_renters = [renters]
+    @renters = renters
   end
 
   def num_beds
     @num_beds
   end
 
-  def add_tenant
-    add_tenant(renters, num_beds)
+  def add_tenant(tenant)
+    if @num_beds > @renters.length
+    @renters << tenant
+    end
   end
+
+
 
 end
