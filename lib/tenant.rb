@@ -1,4 +1,4 @@
-#Tenant Class.
+# Tenant Class
 class Tenant
 
 attr_accessor :name, :age, :gender

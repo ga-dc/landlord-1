@@ -1,4 +1,4 @@
-#Apartment class.
+# Apartment Class
 class Apartment
 
 attr_accessor :address, :monthly_rent, :sqft, :num_beds, :num_baths, :tenant, :apartments
