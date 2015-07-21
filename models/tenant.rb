@@ -1,23 +1,11 @@
 class Tenant
 
-    def initialize( name, age, gender)
-      @name = name
-      @age = age
-      @gender = gender
-    end
+  attr_accessor :name, :age, :gender
 
-    def name
-      return @name
-    end
-
-    def age
-      return @age
-    end
-
-    def gender
-      return @gender
-    end
-    
-
-
+  def initialize( name, age, gender)
+    @name = name
+    @age = age
+    @gender = gender
+  end
+  
 end
