@@ -1,12 +1,12 @@
 class Apartment
 
-  def initialize ( address, rent, sqft, beds, baths, tenants)
+  def initialize ( address, rent, sqft, beds, baths, tenant)
     @address = address
     @monthly_rent = rent
     @sqft = sqft.to_i
     @num_beds = beds.to_i
     @num_baths = baths.to_f
-    @tenants = []
+    @renters = [@tenant]
   end
 
   def address
@@ -28,5 +28,17 @@ class Apartment
   def num_baths
     return @num_baths
   end
+
+  def renters
+    return @renters
+  end
+
+  def add_tenant(tenant)
+    if @renters.length < @num_beds
+      @renters.push(tenant)
+    end
+  end
+
+
 
 end
