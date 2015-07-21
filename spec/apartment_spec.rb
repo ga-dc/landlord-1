@@ -34,4 +34,14 @@ describe Apartment do
     @apartment.add_tenant(@tenant)
     expect(@apartment.renters.length).to eq(3)
   end
+  it "can add tenants" do
+    @apartment.add_tenant(@person)
+    expect(@apartment.renters.length).to eq(2)
+  end
+  it "can only have as many tenants as beds" do
+    @apartment.add_tenant(@person)
+    @apartment.add_tenant(@person)
+    @apartment.add_tenant(@person)
+    expect(@apartment.renters.length).to eq(3)
+  end
 end
