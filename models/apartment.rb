@@ -5,7 +5,7 @@ class Apartment
     @sqft = sqft
     @num_beds = num_beds
     @num_baths = num_baths
-    @renters = []
+    @renters = renters
   end
 
   def address
@@ -33,8 +33,8 @@ class Apartment
   end
 
   def add_tenant (new_tenant)
-    if @Tenant !> @num_beds
+    if @renters.length < @num_beds
       @renters.push(new_tenant)
     end
-
+ end
 end
