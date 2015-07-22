@@ -21,17 +21,17 @@ describe Apartment do
   it "has total number of baths" do
     expect(@apartment.num_baths).to eq(2)
   end
-  it "has renters" do
-    expect(@apartment.renters[0].class).to eq(Tenant)
+  it "has tenants" do
+    expect(@apartment.tenants[0].class).to eq(Tenant)
   end
   it "can add tenants" do
     @apartment.add_tenant(@tenant)
-    expect(@apartment.renters.length).to eq(2)
+    expect(@apartment.tenants.length).to eq(2)
   end
   it "can only have as many tenants as beds" do
     @apartment.add_tenant(@tenant)
     @apartment.add_tenant(@tenant)
     @apartment.add_tenant(@tenant)
-    expect(@apartment.renters.length).to eq(3)
+    expect(@apartment.tenants.length).to eq(3)
   end
 end
