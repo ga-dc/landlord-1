@@ -1,0 +1,13 @@
+class Apartment
+  att_accessor :address, :monthly_rent, :sqft, :num_beds, :num_baths, :renters
+end
+
+def initialize(add_tenant)
+  @add_tenant = add_tenant
+end
+
+if (renters > num_beds)
+  puts "Do not add the tenant to the apartment"
+end
+
+end
